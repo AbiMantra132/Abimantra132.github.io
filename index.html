@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anatory Class</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f1d5863956.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="class-name">
+          <h1 id="class-text">Anatory Class</h1>
+          <div class="bars"><i class="fa-solid fa-bars"></i></div>
+        </div>
+        <ul class="link">
+          <li><a href="#">Kelas</a></li>
+          <li><a href="#">Anggota</a></li>
+          <li><a href="#">Social Media</a></li>
+        </ul>
+      </header>
+      <div class="image-class">
+        <img id="class-photo" src="./1650380038451.jpg" alt="" />
+      </div>
+    </main>
+    <div class="quote">
+      <p id="quotes-id">"A Nation 0f Two About Story Of Youth"</p>
+    </div>
+    <aside>
+      <div class="changer"></div>
+      <div class="main-text-2">
+        <h2 id="kelas-text" data-aos="zoom-out-up" data-aos-duration="600">Kelas</h2>
+      </div>
+      <div class="class-desc">
+        <p id="para1" data-aos= "fade-up" data-aos-duration="1000">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          provident facilis maiores rem ipsum aut obcaecati enim sequi nihil,
+          tenetur odit, saepe nemo doloremque beatae explicabo? Alias quia
+          assumenda cum. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Id esse minus totam itaque nihil aut odit provident officia
+          voluptas perferendis obcaecati delectus dolorum animi, ex, labore ut
+          deleniti quos nisi. Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Recusandae id vel exercitationem modi beatae saepe
+          rem atque sit porro, eum nam enim, expedita, possimus dolorum error
+          quidem! Suscipit, optio ipsum?
+        </p>
+        <p id="para2" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa labore
+          laborum minus minima quaerat nihil, ratione aliquid ea vel vitae illum
+          assumenda dolorum sapiente asperiores cupiditate placeat, distinctio
+          quis tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Aut labore quibusdam, fuga ad tempora eveniet et illo voluptas
+          quis magnam aspernatur facilis dolor impedit placeat vitae doloremque
+          mollitia recusandae odit. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Commodi voluptatem ipsa corrupti eveniet laudantium
+          quae. Expedita doloribus molestiae at numquam ipsum fuga deleniti quae
+          explicabo modi voluptate, eius, consequatur blanditiis.
+        </p>
+      </div>
+    </aside>
+    <div class="aside-2">
+      <div class="changer-2"></div>
+      <div class="main-text-3">
+        <h2 id="social-text"  data-aos="zoom-out-up" data-aos-duration="600">Social Media</h2>
+      </div>
+      <div class="instagram" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="100"><a href=""><i class="fab fa-instagram"></i></a></div>
+    </div>
+    <div class="footer">
+    <div class="changer-3"></div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true
+      });
+    </script>
+    <!-- Gsap Animation -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
+     <script>
+         gsap.from("header", {
+             duration:1, y: "-100%", opacity:0, ease:"power4" 
+         })
+         gsap.from(".quote", {
+             duration: 1, scale: 3, rotateX: 180, opacity:0, delay: .4, ease:"power1"
+         })
+     </script>
+
+  </body>
+</html>
